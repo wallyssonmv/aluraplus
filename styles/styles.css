@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #F9F9F9;
+    --cor-terciaria: #167BF7;
+    --cor-efeito: #22f1f8;
+    --cor-efeito-secundaria: #cccccc;
+    --cor-quaternaria: #C0C0C0;
+    --cor-fundo: #00030C;
+
+    --fonte-primaria: 'Inter', sans-serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.principal {
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.container__botao {
+    background-color: var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 0.8em;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--cor-efeito);
+    color: var(--cor-fundo);
+}
+
+.botao__secundario:hover {
+    background-color: var(--cor-efeito-secundaria);
+    color: #00030C;
+    border: 1px solid #00030C;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 1px solid var(--cor-primaria);
+}
+
+.container__aviso {
+    color: var(--cor-quaternaria);
+    font-size: 12px;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.secundario {
+    display: flex;
+    align-items: center;
+}
+
+.secundario__imagem {
+    margin-left: 10em;
+    width: 80%;
+}
+
+.imagem__direita {
+    margin: 0 3.2em 0 0;
+}
+
+.container__descricao {
+    padding: 3.2em;
+}
+
+.secundario__botao {
+    margin: 1em 0;
+    display: inline-block;
+}
+
+.secundario__titulo {
+    font-weight: 700px;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+.secundario__content {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+.dispositivos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 7.5em 0;
+}
+
+.dispositivos__titulo {
+    font-weight: 700px;
+    font-size: 48px;
+    margin: 2.5em 0;
+}
+
+.dispositivos__lista{
+    display: flex;
+    text-align: center;
+    margin-bottom: 1em;
+    list-style-type: none;
+}
+
+.dispositivos__lista__item{
+    text-align: center;
+}
+
+.dispositivos__descricao {
+    font-weight: 700px;
+    font-size: 32px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 0 5em;
+}
+
+.rodape__imagem {
+    margin: 2em 0;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.rodape__lista__link {
+    margin: 0 1em;
+}
+
+.rodape__lista__link a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400px;
+    color: var(--cor-primaria);
+}
+
+.rodape__lista__link a:hover {
+    color: var(--cor-terciaria);
+}
+
+.rodape__texto {
+    font-size: 12px;
+    font-weight: 400px;
+    color: var(--cor-quaternaria);
+}
